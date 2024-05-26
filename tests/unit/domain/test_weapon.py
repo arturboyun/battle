@@ -1,6 +1,6 @@
 from uuid import UUID
 import pytest
-from src.domain.weapon import Weapon
+from domain.weapon import Weapon
 
 
 def test_weapon_creation():

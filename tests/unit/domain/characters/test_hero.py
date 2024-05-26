@@ -1,6 +1,6 @@
 import pytest
-from src.domain.characters.hero import Hero
-from src.domain.inventory import Inventory
+from domain.characters.hero import Hero
+from domain.inventory import Inventory
 
 
 def test_hero_initialization_with_default_inventory():
