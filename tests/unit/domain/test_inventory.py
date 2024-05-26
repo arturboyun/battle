@@ -1,6 +1,6 @@
 import pytest
-from domain.inventory import Inventory
-from domain.item import Item
+from src.domain.inventory import Inventory
+from src.domain.item import Item
 from uuid import UUID, uuid4
 
 

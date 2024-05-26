@@ -1,5 +1,5 @@
 import pytest
-from domain.item import Item
+from src.domain.item import Item
 from uuid import UUID
 
 
