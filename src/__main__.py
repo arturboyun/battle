@@ -2,7 +2,8 @@
 This is the main file that will be executed when the package is run.
 """
 
-from src.domain.characters.character import Hero, Enemy
+from src.domain.characters.hero import Hero
+from src.domain.characters.enemy import Enemy
 from src.domain.weapon import short_bow
 
 hero = Hero(name="John Raumn", health=50)
