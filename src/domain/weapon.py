@@ -6,7 +6,7 @@ class Weapon(Item):
     This class represents a weapon
     """
 
-    def __init__(self, name: str, weapon_type: str, damage: int, price: float):
+    def __init__(self, name: str, weapon_type: str, damage: int, price: float | int):
         super().__init__(name, price)
 
         if not isinstance(weapon_type, str):
@@ -14,10 +14,8 @@ class Weapon(Item):
         if not isinstance(damage, int):
             raise TypeError("Damage must be an integer")
 
-        self.name = name
         self.weapon_type = weapon_type
         self.damage = damage
-        self.value = price
 
 
 iron_sword = Weapon(name="Iron Sword", weapon_type="Sword", damage=10, price=10)

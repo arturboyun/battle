@@ -11,7 +11,6 @@ def test_weapon_creation():
     assert weapon.name == "Iron Sword"
     assert weapon.weapon_type == "Sword"
     assert weapon.damage == 10
-    assert weapon.value == 10
     assert weapon.id is not None
     assert isinstance(weapon.id, UUID)
 

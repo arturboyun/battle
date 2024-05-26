@@ -6,8 +6,6 @@ class Character:
     This class represents a character in the game
     """
 
-    race = "Human"
-
     __slots__ = ["_name", "_health", "_max_health", "_weapon"]
 
     def __init__(self, name: str, health: int):
