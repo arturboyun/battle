@@ -39,7 +39,11 @@ def test_inventory_wrong_init():
         )
     with pytest.raises(TypeError):
         Inventory(
-            {uuid4(): Item("Sword", 50.0), uuid4(): Item("Shield", 30.0), uuid4(): 1}
+            {
+                uuid4(): Item("Sword", 50.0),
+                uuid4(): Item("Shield", 30.0),
+                uuid4(): 1,
+            }
         )
 
 
@@ -68,3 +72,13 @@ def test_inventory_remove_item():
     item_id = inventory.add_item(item)
     assert inventory.remove_item(item_id) == item
     assert item not in inventory.items.values()
+
+
+def test_inventory_str():
+    inventory = Inventory()
+    assert str(inventory) == repr(inventory)
+
+
+def test_inventory_repr():
+    inventory = Inventory()
+    assert repr(inventory) == f"Inventory(items={inventory.items})"

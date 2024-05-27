@@ -50,11 +50,7 @@ class Inventory:
         return self._items.pop(id_, None)
 
     def __str__(self) -> str:
-        tab_spaces = "    "
-        result = f"Inventory(len={len(self._items)}, items=[\n{tab_spaces}"
-        result += f", \n{tab_spaces}".join([str(item) for item in self._items.values()])
-        result += "\n])"
-        return result
+        return repr(self)
 
     def __repr__(self) -> str:
-        return str(self._items)
+        return f"Inventory(items={self._items})"

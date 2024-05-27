@@ -1,6 +1,8 @@
 # Battle
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Coverage](https://codecov.io/github/arturboyun/battle/branch/main/graph/badge.svg)](https://github.com/arturboyun/battle/actions)
+
 
 ## Description
 
