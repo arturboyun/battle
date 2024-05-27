@@ -1,4 +1,3 @@
-from tarfile import TarError
 import pytest
 from src.domain.characters.character import Character
 from src.domain.weapon import Weapon
