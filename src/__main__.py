@@ -17,8 +17,7 @@ def main():
     while True:
         hero.attack(enemy)
         if enemy.health == 0:
-            print(f"{hero.name
-                     } wins!")
+            print(f"{hero.name} wins!")
             break
 
         enemy.attack(hero)
