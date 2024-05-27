@@ -43,3 +43,13 @@ def test_item_equality():
     assert item1 == item2
     assert item1 != item3
     assert item1 != 1
+
+
+def test_item_repr():
+    item = Item("Test Item", 10.99)
+    assert repr(item) == "Item(name='Test Item', price=10.99)"
+
+
+def test_item_str():
+    item = Item("Test Item", 10.99)
+    assert str(item) == repr(item)
