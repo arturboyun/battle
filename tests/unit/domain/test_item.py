@@ -47,7 +47,7 @@ def test_item_equality():
 
 def test_item_repr():
     item = Item("Test Item", 10.99)
-    assert repr(item) == f"Item(id={item.id}, name='Test Item', price=10.99)"
+    assert repr(item) == f"Item(id={item.id}, name=Test Item, price=10.99)"
 
 
 def test_item_str():
