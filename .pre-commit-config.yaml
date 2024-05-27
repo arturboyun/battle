@@ -11,9 +11,19 @@ repos:
       - id: check-json
       - id: check-xml
       - id: check-toml
+
   - repo: https://github.com/pylint-dev/pylint
     rev: v3.2.2
     hooks:
       - id: pylint
         files: src/
         args: ["--rcfile=.pylintrc"]
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.5
+    hooks:
+      # Run the linter.
+      - id: ruff
+        args: [ --fix ]
+      # Run the formatter.
+      - id: ruff-format
