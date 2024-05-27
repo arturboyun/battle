@@ -18,7 +18,6 @@ repos:
       files: src/
       args:
         [
-          "src/",
           "--rcfile=pylintrc", # Link to your config file
           "--load-plugins=pylint.extensions.docparams", # Load an extension
         ]
