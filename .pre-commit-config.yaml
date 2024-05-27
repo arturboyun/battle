@@ -11,13 +11,11 @@ repos:
     -   id: check-json
     -   id: check-xml
     -   id: check-toml
-  - repo: local
+  - repo: https://github.com/pylint-dev/pylint
+    rev: v3.2.2
     hooks:
     - id: pylint
-      name: pylint
-      entry: pylint
-      language: system
-      types: [python]
+      files: src/
       args:
         [
           "src/",
