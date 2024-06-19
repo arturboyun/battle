@@ -1,4 +1,6 @@
-from src.domain.inventory import Inventory
+from src.battle.domain.inventory import Inventory
+
+
 from .character import Character
 
 
@@ -9,7 +11,9 @@ class Hero(Character):
 
     __slots__ = ["_inventory"]
 
-    def __init__(self, name: str, health: int, inventory: Inventory | None = None):
+    def __init__(
+        self, name: str, health: int, inventory: Inventory | None = None
+    ):
         super().__init__(name, health)
 
         if inventory is None:

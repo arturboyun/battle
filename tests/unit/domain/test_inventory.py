@@ -1,7 +1,9 @@
-import pytest
-from src.domain.inventory import Inventory
-from src.domain.item import Item
 from uuid import UUID, uuid4
+
+import pytest
+
+from src.battle.domain.inventory import Inventory
+from src.battle.domain.item import Item
 
 
 @pytest.fixture

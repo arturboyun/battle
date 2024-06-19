@@ -6,7 +6,9 @@ class Item:
     Item class
     """
 
-    def __init__(self, name: str, price: float | int, *, id_: UUID | None = None):
+    def __init__(
+        self, name: str, price: float | int, *, id_: UUID | None = None
+    ):
         if not isinstance(name, str):
             raise TypeError("Name must be a string")
         if not isinstance(price, (float, int)):

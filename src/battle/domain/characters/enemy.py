@@ -1,4 +1,6 @@
-from src.domain.weapon import Weapon
+from src.battle.domain.weapon import Weapon
+
+
 from .character import Character
 
 

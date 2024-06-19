@@ -1,4 +1,4 @@
-from src.domain.weapon import Weapon, fists
+from src.battle.domain.weapon import Weapon, fists
 
 
 class Character:

@@ -1,6 +1,7 @@
 import pytest
-from src.domain.weapon import Weapon
-from src.domain.characters.enemy import Enemy
+
+from src.battle.domain.characters.enemy import Enemy
+from src.battle.domain.weapon import Weapon
 
 
 def test_enemy_initialization():

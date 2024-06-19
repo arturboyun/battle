@@ -1,6 +1,6 @@
 from uuid import UUID, uuid4
 
-from src.domain.item import Item
+from src.battle.domain.item import Item
 
 type ItemsList = dict[UUID, Item]
 

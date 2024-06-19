@@ -1,6 +1,8 @@
-import pytest
-from src.domain.item import Item
 from uuid import UUID
+
+import pytest
+
+from src.battle.domain.item import Item
 
 
 def test_item_initialization():
